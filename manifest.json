@@ -1,8 +1,8 @@
 {
   "name": "INDO GALAXY ROLEPLAY",
   "short_name": "INDO GALAXY",
-  "theme_color": "#FFFF",
-  "background_color": "#E3AEFF",
+  "theme_color": "#FFF",
+  "background_color": "#FFF",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
