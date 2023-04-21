@@ -1,4 +1,4 @@
-#Indo Galaxy
+## Indo Galaxy
 
 INDO GALAXY ROLEPLAY INDONESIA Merupakan Komunitas Game Online dari GTA SA Modifikasi untuk bermain roleplay.
 
