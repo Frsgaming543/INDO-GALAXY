@@ -10,4 +10,4 @@ Di IndoGlaxy tidak hanya bisa bermain game samp roleplay tetapi di discord kami 
 
 # AYOK JOIN DI SERVER INDOGALAXY ROLEPLAY SEKARANG
 ![img 1](ig3.png)
-![img 2](banner IndoGalaxy.png)
+![img 1](banner IndoGalaxy.png)
