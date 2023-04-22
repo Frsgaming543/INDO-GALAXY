@@ -30,9 +30,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="ig.png">
+    <!-- manifest -->
     <link rel="manifest" href="manifest.json">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body>
+<!-- scroll top -->
+<div id="progress">
+      <span id="progress-value"><i class="ri-arrow-up-line"></i></span>
+    </div>
 
     <!-- Preloader 
     <div id="preloader">
@@ -58,16 +64,16 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#team">Our Team</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="btn" href="register.html">Daftar</a>
+          <a class="btn purple" href="register.html">Daftar</a>
         </li>
         <li class="nav-item">
-          <a class="btn" href="login.html">Login</a>
+          <a class="btn purple" href="login.html">Login</a>
         </li>
       </ul>
     </div>
@@ -87,9 +93,8 @@
                         <h4 class="fw-bold fs-4 mt-3">Merupakan Komunitas Game Online dari GTA SA Modifikasi untuk bermain roleplay.</h4>
                         <p class="mt-2">ROLEPLAY adalah permainan memerankan sebuah karakter seperti layaknya di dunia nyata dan bertemu dengan player lain dengan cerita kehidupan yang kita tentukan sendiri. Seperti di dunia nyata, kadang hidup kita membosankan, terkadang juga hidup kita penuh drama.
                     </p>
-                    <div class="button">
-                    <a>DISCORD</a>
-                    </div>
+                    <a class="btn btn-outline-success" href="https://www.mediafire.com/file/7ffv5ffph8q48sp/BAHAN_GTA_SAMP.rar/file" role="button">SAMP DESKTOP</a>
+                    <a class="btn btn-outline-primary" href="https://discord.io/IndoGalaxy" role="button" style="margin-left: 3px;">DISCORD</a>
                     </div>
                     <div class="col-md-4 offset-1">
                         <img src="ig2.png" alt="logo"/>
@@ -125,6 +130,64 @@
         </div>
         <!-- End -->
 
+<!-- our team -->
+<div id="team">
+<section class="team">
+		<div class="center">
+			<h1>Our Team</h1>
+			<h5>___________________________</h5>
+		</div>
+
+		<div class="team-content">
+			<div class="box">
+				<img src="images/01.png">
+				<h3>Frs gaming</h3>
+				<h5>Owner</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="images/01.png">
+				<h3>Xin hugo</h3>
+				<h5>Assisten Owner</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="images/03.png">
+				<h3>Rayhana</h3>
+				<h5>donation manager</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="images/04.png">
+				<h3>Indo Galaxy</h3>
+				<h5>Developer</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+</div>
+<!-- end -->
+
 <!-- Typing Js -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
@@ -135,6 +198,43 @@
                 loop: true,
             });
         </script>
+   
+<!-- scroll top -->     
+        <script>
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(purple ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+        </script>
+        
+    <script>
+      const button = document.querySelector(".button");
+
+      button.addEventListener("click", (e) => {
+        e.preventDefault;
+        button.classList.add("animate");
+        setTimeout(() => {
+          button.classList.remove("animate");
+        }, 600);
+      });
+    </script>
 
 <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
